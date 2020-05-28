@@ -5,25 +5,15 @@
   "author": "morten <938091+mortefos@users.noreply.github.com>",
   "homepage": "https://github.com/mortefos/effective-chainsaw#readme",
   "license": "ISC",
-  "main": "lib/server.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
-  "publishConfig": {
-    "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mortefos/effective-chainsaw.git"
-  },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "build": "tsc"
   },
-  "bugs": {
-    "url": "https://github.com/mortefos/effective-chainsaw/issues"
+  "main": "lib/server.js",
+  "dependencies": {
+    "apollo-server-express": "2.9.13",
+    "ejs": "3.1.3",
+    "express": "4.17.1",
+    "graphql": "15.0.0",
+    "graphql-tools": "6.0.3"
   }
 }
