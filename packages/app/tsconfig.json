@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "extends": "../../tsconfig.json",
+    "target": "es5",
+    "jsx": "react",
+    "lib": ["dom", "esnext"]
+  }
+}

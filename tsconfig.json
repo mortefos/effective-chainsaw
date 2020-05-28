@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "strict": true,
     "esModuleInterop": true,
-    "jsx": "react",
-    "lib": ["dom", "esnext"]
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "lib": ["ESNext"],
+    "module": "CommonJS",
+    "sourceMap": true,
+    "strict": true,
+    "target": "ES2017"
   },
-  "exclude": ["./node_modules", "./dist"]
+  "exclude": ["./node_modules", "./dist", "./lib"]
 }
