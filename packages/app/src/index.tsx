@@ -1,3 +1,4 @@
+import { Global } from "@emotion/core";
 import React from "react";
 import { render } from "react-dom";
 
@@ -11,4 +12,11 @@ if (!appRoot) {
   document.body.insertBefore(appRoot, document.body.firstChild);
 }
 
-render(<App />, appRoot);
+render(
+  <>
+    <Global styles={{ margin: 0 }}></Global>
+
+    <App />
+  </>,
+  appRoot
+);
