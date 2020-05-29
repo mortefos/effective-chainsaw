@@ -1,4 +1,4 @@
-import { Global } from "@emotion/core";
+import { css, Global } from "@emotion/core";
 import React from "react";
 import { render } from "react-dom";
 
@@ -14,8 +14,13 @@ if (!appRoot) {
 
 render(
   <>
-    <Global styles={{ margin: 0 }}></Global>
-
+    <Global
+      styles={css`
+        body {
+          margin: 0;
+        }
+      `}
+    />
     <App />
   </>,
   appRoot
